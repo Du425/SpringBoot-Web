@@ -26,5 +26,6 @@ spring:
     static-path-pattern: /static/**
 
 
+
 #    favicon:
 #      enabled: false

@@ -15,7 +15,9 @@ server:
 spring:
   thymeleaf:
     cache: false
-#    prefix: classpath:templates/emp/
+    servlet:
+      content-type: text/html
+  #    prefix: classpath:templates/emp/
 #配置文件存放的真实位置
   messages:
     basename: i18n.login

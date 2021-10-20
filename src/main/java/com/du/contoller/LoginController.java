@@ -5,15 +5,13 @@ import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
 
 @Controller
 public class LoginController {
     @RequestMapping("/user/login")
-    public String login(@RequestParam("username") String username,
+    public String login(@RequestParam String username,
                         @RequestParam("password") String password,
                         Model model, HttpSession session){
         //具体的业务，判断账户密码是否正确
